@@ -1,0 +1,275 @@
+@font-face {
+  font-family: AkayaTelivigala-Regular;
+  src: url(/fonts/AkayaTelivigala-Regular.ttf);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+}
+
+.main-container {
+  max-width: 1280px;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+.dad {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1; */
+}
+
+@media (max-width: 1080px) {
+  .dad {
+    width: 450px;
+    height: 80vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 980px) {
+  main {
+    flex-direction: column;
+    height: fit-content;
+    min-height: fit-content;
+    padding-top: 40px;
+  }
+  .dad {
+    display: block;
+    margin: 70px auto;
+  }
+}
+
+.address-container {
+  height: 80vh;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.address {
+  height: 100%;
+  width: 100%;
+  background-color: coral;
+  border-radius: 30px;
+  box-shadow: -1px 3px 25px -1px rgb(243 150 116),
+    6px -1px 42px -18px rgb(243 150 116);
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: AkayaTelivigala-Regular;
+  color: white;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.heading {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.address::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* .circle {
+  height: 1000px;
+  width: 1000px;
+  border-radius: 100%;
+  background-color: rgb(255, 196, 161);
+} */
+
+/* .baloon {
+  position: absolute;
+  top: -17vh;
+  right: -15vw;
+  transform: rotate(-3deg);
+  max-width: 40vw;
+}
+
+.sixty {
+  position: absolute;
+  bottom: 0;
+  right: 13%;
+} */
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+
+.main-section {
+  z-index: 1;
+  background-color: #171716;
+}
+
+.left {
+  width: 70%;
+  max-width: 70%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.wish {
+  padding: 0 30px;
+  font-family: sans-serif;
+  color: rgb(240, 240, 240);
+  box-sizing: border-box;
+}
+
+.wish-upper {
+  display: flex;
+}
+
+.wish-text {
+  font-size: 20px;
+  padding-right: 3vw;
+  line-height: 25px;
+}
+
+.text-container {
+  width: 100%;
+}
+
+.line {
+  width: 0px;
+  border-right: 2px solid rgb(184, 184, 184);
+}
+
+.ball {
+  min-height: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  flex: 0;
+  border-radius: 100%;
+  background-color: rgb(202, 39, 39);
+  margin-right: 30px;
+}
+
+.wish-sender {
+  font-size: 16px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.lines-box {
+  height: 60px;
+  margin-left: auto;
+  position: relative;
+  /* right: -50%; */
+}
+
+.lines-square {
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  transform-origin: top left;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.wish-lower {
+  display: flex;
+  overflow: hidden;
+}
+
+.cake-0 {
+  transform: rotate(15deg);
+}
+
+.cake-1 {
+  transform: rotate(-15deg);
+}
+
+.allowOverflow {
+  overflow: visible;
+}
+
+.arrow {
+  transform: translateX(-50%);
+  height: 0;
+  width: 0;
+  border-top: 30px solid rgb(202, 39, 39);
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+@media (max-width: 900px) {
+  .right {
+    display: none;
+  }
+  .left {
+    width: 100%;
+    max-width: 100%;
+  }
+  .wish {
+    padding: 0;
+  }
+  .ball {
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    flex: 0;
+    border-radius: 100%;
+    background-color: rgb(202, 39, 39);
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .line,
+  .lines-box {
+    display: none;
+  }
+  .wish {
+    margin-bottom: 40px;
+  }
+}
+
+.music-control {
+  height: 100px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.music-control svg {
+  cursor: pointer;
+}
