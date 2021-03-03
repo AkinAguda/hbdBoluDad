@@ -30,6 +30,7 @@ main {
   left: 0;
   height: 100vh;
   z-index: 1; */
+  max-width: 542px;
 }
 
 @media (max-width: 1080px) {
@@ -213,10 +214,14 @@ main {
 
 .cake-0 {
   transform: rotate(15deg);
+  max-width: 448px;
+  max-height: 428px;
 }
 
 .cake-1 {
   transform: rotate(-15deg);
+  max-width: 448px;
+  max-height: 428px;
 }
 
 .allowOverflow {
