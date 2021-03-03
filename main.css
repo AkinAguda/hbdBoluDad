@@ -56,9 +56,10 @@ main {
 }
 
 .address-container {
-  height: 80vh;
+  height: fit-content;
   width: 100%;
   max-width: 550px;
+  min-width: 40vw;
   margin: auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -71,7 +72,7 @@ main {
   border-radius: 30px;
   box-shadow: -1px 3px 25px -1px rgb(243 150 116),
     6px -1px 42px -18px rgb(243 150 116);
-  padding: 30px;
+  padding: 50px 30px;
   box-sizing: border-box;
   font-family: AkayaTelivigala-Regular;
   color: white;
@@ -84,6 +85,7 @@ main {
   text-align: center;
   font-size: 45px;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .paragraph {
