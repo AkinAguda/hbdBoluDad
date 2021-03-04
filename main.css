@@ -31,6 +31,7 @@ main {
   height: 100vh;
   z-index: 1; */
   max-width: 542px;
+  min-width: 3vw;
 }
 
 @media (max-width: 1080px) {
